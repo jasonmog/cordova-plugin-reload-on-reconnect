@@ -8,11 +8,21 @@
     <dependency id="cordova-plugin-network-information" version="^1.0.0" />
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
+            <feature name="ReloadOnReconnect">
                 <param name="ios-package" value="CDVReloadOnReconnect"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
         <header-file src="src/ios/CDVReloadOnReconnect.h" />
         <source-file src="src/ios/CDVReloadOnReconnect.m" />
+    </platform>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ReloadOnReconnect">
+                <param name="android-package" value="reloadonreconnect.ReloadOnReconnect" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/ReloadOnReconnect.java" target-dir="src/reloadonreconnect" />
     </platform>
 </plugin>
