@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-reload-on-reconnect" version="1.0.0">
+    <name>Reload On Reconnect</name>
+    <description>Reloads the webview when internet connection is restored.</description>
+    <license>MIT License</license>
+    <keywords>cordova,network,reload,reconnect</keywords>
+    <dependency id="cordova-plugin-network-information" version="^1.0.0" />
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="ios-package" value="CDVReloadOnReconnect"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVReloadOnReconnect.h" />
+        <source-file src="src/ios/CDVReloadOnReconnect.m" />
+    </platform>
+</plugin>

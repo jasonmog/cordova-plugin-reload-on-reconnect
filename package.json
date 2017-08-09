@@ -1,0 +1,29 @@
+{
+  "name": "reload-on-reconnect",
+  "version": "1.0.0",
+  "description": "Reloads the webview when internet connection is restored.",
+  "cordova": {
+    "id": "cordova-plugin-reload-on-reconnect",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmog/cordova-plugin-reload-on-reconnect.git"
+  },
+  "keywords": [
+    "cordova",
+    "network",
+    "reload",
+    "reconnect",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Jason Jaskolka",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/jasonmog/cordova-plugin-reload-on-reconnect/issues"
+  },
+  "homepage": "https://github.com/jasonmog/cordova-plugin-reload-on-reconnect#readme"
+}
